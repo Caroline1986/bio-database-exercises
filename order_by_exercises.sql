@@ -5,9 +5,16 @@ FROM employees
 WHERE first_name IN ('Irena', 'Vidya','Maya')
 ORDER BY first_name,last_name;
 
+
 SELECT *
 FROM employees
-WHERE last_name LIKE 'E%';
+WHERE first_name IN ('Irena', 'Vidya','Maya')
+ORDER BY last_name, first_name;
+
+# sort the results by their employee number.
+SELECT *
+FROM employees
+WHERE last_name LIKE 'E%'ORDER BY emp_no DESC;
 
 SELECT *
 FROM employees
