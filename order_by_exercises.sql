@@ -59,5 +59,5 @@ ORDER BY birth_date, hire_date DESC;
 #   AND birth_date LIKE '%-12-25';
 #
 # SELECT *
-# FROM (SELECT * FROM employees WHERE last_name LIKE '%q%') AS t1
+# FROM (SELECT * FROM employees WHERE last_name LIKE '%q%') AS unique
 # WHERE last_name NOT LIKE '%qu%';
